@@ -1,0 +1,99 @@
+.banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__title {
+    text-transform: capitalize;
+    font-size: 4.8rem;
+    font-weight: var(--weight-700);
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.banner__description {
+    font-family: var(--poppins);
+    font-size: 1.8rem;
+    font-weight: var(--weight-500);
+    line-height: 140%;
+    color: var(--primary-color);
+    text-align: center;
+    
+    max-width: 70%;
+    margin: 0 auto 3.7rem;
+}
+
+.banner__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.banner__button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    padding: 1.2rem 5rem;
+    border: none;
+    border-radius: 3px;
+    transition: 300ms;
+}
+
+.banner__button:hover {
+    background-color: #1c402f;
+}
+
+.banner__button--watch {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border: 3px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.banner__button--watch:hover {
+    background-color: transparent;
+    border-color:  var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1000px) {
+    .banner {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .banner__description {
+        text-align: left;
+        margin: 0 0 3.7rem;
+    }
+
+    .banner__buttons {
+        flex-direction: column;
+        justify-content: initial;
+        gap: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner__description {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .banner__title {
+        font-size: 4rem;
+    }
+    
+    .banner__description {
+        font-size: 1.6rem;
+    }
+}

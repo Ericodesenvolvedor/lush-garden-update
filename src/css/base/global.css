@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --primary-color: #FFFFFF;
+    --secondary-color: #285A43;
+    --secondary-color-varient: #337A5B;
+    --terceary-color: #121212;
+    
+    /* FONTS */
+    --lato: 'Lato', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-700: 700;
+    --weight-900: 900;
+
+    /* 1REM = 10PX */
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    font-size: 1.6rem;
+    font-family: var(--lato);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+    
+    background-image: url("../../images/background-plant-cactus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: rgba(18, 18, 18, 0.8);
+    background-blend-mode: color;
+    filter: grayscale(100%);
+}

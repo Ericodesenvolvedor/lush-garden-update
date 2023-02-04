@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/images/favicon/favicon.ico" type="image/x-icon">
+    <title>Lush Garden</title>
+
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/base/global.css">
+    <link rel="stylesheet" href="src/css/module/container.css">
+    <link rel="stylesheet" href="src/css/layout/header/navigation.css">
+    <link rel="stylesheet" href="src/css/layout/header/banner.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navigation container-padding">
+                <a class="navigation__brand-link" href="#">
+                    <img  class="navigation__brand" src="./src/images/brand.png" alt="Brand Lush Garden." />
+                </a>
+
+                <div class="navigation__menu">
+                    <ul class="navigation__items" data-menu>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Home</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">About us</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Planters</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Contact</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link navigation__link--border">Call us</a>
+                        </li>
+                    </ul>
+
+                    <button class="navigation__hamburguer" data-hamburguer>
+                        <span class="navigation__hamburguer-line"></span>
+                        <span class="navigation__hamburguer-line"></span>
+                        <span class="navigation__hamburguer-line"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="banner container-padding">
+                <h1 class="banner__title">Nature's Beauty Delivered to You</h1>
+                <p class="banner__description">Nature's beauty is just a click away with our online flower and plant shop. We offer a wide variety of flowers that will bring a touch of nature to your home!</p>
+                <div class="banner__buttons">
+                    <button class="banner__button">Book Now</button>
+                    <button class="banner__button banner__button--watch">
+                        <i class="fa-solid fa-play banner__button-icon"></i>
+                        Watch Video
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <script src="./src/js/main.js" type="module"></script>
+</body>
+</html>
